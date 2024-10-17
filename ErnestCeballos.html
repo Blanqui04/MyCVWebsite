@@ -57,40 +57,7 @@
         <h2>Aptituds Personals</h2>
         <p>Aquí tens una representació gràfica de les meves aptituds personals:</p>
         <canvas id="aptitudsChart" width="400" height="400"></canvas>
-        <script>
-            const ctx = document.getElementById('aptitudsChart').getContext('2d');
-            const aptitudsChart = new Chart(ctx, {
-                type: 'radar',
-                data: {
-                    labels: ['Comunicació', 'Dedicació', 'Treball en equip', 'Adaptabilitat', 'Creativitat'],
-                    datasets: [{
-                        label: 'Aptituds Personals',
-                        data: [75, 90, 85, 90, 60],
-                        backgroundColor: 'rgba(46, 139, 87, 0.2)',
-                        borderColor: '#2e8b57',
-                        borderWidth: 2
-                    }]
-                },
-                options: {
-                    scales: {
-                        r: {
-                            beginAtZero: true
-                        }
-                    },
-                    plugins: {
-                        tooltip: {
-                            enabled: true,
-                            backgroundColor: '#2e8b57',
-                            titleFont: { size: 16 },
-                            bodyFont: { size: 14 }
-                        }
-                    }
-                }
-            });
-        </script>
     </section>
-
-    
 
     <section id="curriculum">
         <h2>Currículum</h2>
@@ -98,8 +65,8 @@
         <a href="CV_Ernest_Ceballos.pdf" download>Descarrega el meu Currículum (PDF)</a>
         <h3>Experiència Laboral</h3>
         <ul>
-            <li>Setembre 2024 - Actualitat: Data Scientist a <a href="https://www.some.es/es/#:~:text=Somos%20especialistas%20en%20la%20transformaci%C3%B3n%20de%20chapa%20met%C3%A1lica%20mediante%20una" target="_blank">SOME S.A.</a></li>
-            <li>Juny - Setembre 2024: Pràctiques a <a href="https://www.some.es/es/#:~:text=Somos%20especialistas%20en%20la%20transformaci%C3%B3n%20de%20chapa%20met%C3%A1lica%20mediante%20una" target="_blank">SOME S.A.</a> com a Data Analyst</li>
+            <li>Setembre 2024 - Actualitat: Data Scientist a <a href="https://www.some.es/es/#:~:text=Somos%20especialistas%20en%20la%20transformaci%C3%B3n%20de%20chapa%20met%C3%A0lica%20mediante%20una" target="_blank">SOME S.A.</a></li>
+            <li>Juny - Setembre 2024: Pràctiques a <a href="https://www.some.es/es/#:~:text=Somos%20especialistas%20en%20la%20transformaci%C3%B3n%20de%20chapa%20met%C3%A0lica%20mediante%20una" target="_blank">SOME S.A.</a> com a Data Analyst</li>
         </ul>
         <h3>Formació</h3>
         <ul>
@@ -141,35 +108,8 @@
     <footer>
         <p>&copy; 2024 Ernest Ceballos | <a href="mailto:ernestceballos@gmail.com">Correu Electrònic</a></p>
     </footer>
-    
 
-    <script>
-        const sections = document.querySelectorAll('section');
-        const options = { threshold: 0.1 };
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, options);
-        sections.forEach(section => observer.observe(section));
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-
-            if (name && email && message) {
-                document.getElementById('responseMessage').textContent = 'Gràcies pel teu missatge, ' + name + '!';
-                document.getElementById('contactForm').reset();
-            } else {
-                document.getElementById('responseMessage').textContent = 'Si us plau, completa tots els camps.';
-            }
-        });
-    </script>
+    <!-- Link to external JavaScript file -->
+    <script src="scripts.js"></script>
 </body>
 </html>
-
-
-
