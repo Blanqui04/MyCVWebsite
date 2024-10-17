@@ -46,7 +46,7 @@ The design process was first outlined using Figma, where the layout, color schem
 
 The website is hosted on GitHub Pages. You can view the live version of the website at the following link:
 
-[https://your-github-username.github.io/ErnestCeballos-CV/](https://your-github-username.github.io/ErnestCeballos-CV/)
+[https://your-github-username.github.io/ErnestCeballos-CV/](https://blanqui04.github.io/MyCVWebsite/)
 
 ## Project Files
 
