@@ -40,7 +40,7 @@ The visual design uses a clean and modern aesthetic with a focus on green tones 
 
 ### 4. Figma Design
 
-The design process was first outlined using Figma, where the layout, color scheme, and typography choices were visualized. You can view the Figma project [here](https://www.figma.com/file/your-project-link).
+The design process was first outlined using Figma, where the layout, color scheme, and typography choices were visualized. You can view the Figma project [here](https://www.figma.com/design/3wCW1Ru5zZjLhyitEsw2q8/LaMevaPaginaPersonal?node-id=0-1&t=V0ieqN3l6X2GBC9Y-1).
 
 ### 5. GitHub Pages Link
 
